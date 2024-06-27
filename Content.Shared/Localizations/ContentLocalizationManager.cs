@@ -11,7 +11,7 @@ namespace Content.Shared.Localizations
 
         // If you want to change your codebase's language, do it here.
         private const string Culture = "en-US"; // CrystallPunk-Localization
-        private const string FallbackCulture = "en-US"; // CrystallPunk-Localization
+        private const string FallbackCulture = "ru-RU"; // CrystallPunk-Localization
         //Creating an English CrystallPunk server? Set Culture to "en-US"
 
         /// <summary>
