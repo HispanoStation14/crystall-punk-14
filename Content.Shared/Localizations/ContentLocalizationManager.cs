@@ -28,11 +28,14 @@ namespace Content.Shared.Localizations
         public void Initialize()
         {
             var culture = new CultureInfo(Culture);
-            var fallbackCulture = new CultureInfo(FallbackCulture);
-
+            // Uncomment for Ru localization
             _loc.LoadCulture(culture);
-            _loc.LoadCulture(fallbackCulture); // CrystallPunk-Localization
-            _loc.SetFallbackCluture(fallbackCulture); // CrystallPunk-Localization
+
+            var fallbackCulture = new CultureInfo("en-US");
+            _loc.LoadCulture(fallbackCulture);
+            _loc.SetFallbackCluture(fallbackCulture);
+            //
+
             _loc.AddFunction(culture, "PRESSURE", FormatPressure);
             _loc.AddFunction(culture, "POWERWATTS", FormatPowerWatts);
             _loc.AddFunction(culture, "POWERJOULES", FormatPowerJoules);
