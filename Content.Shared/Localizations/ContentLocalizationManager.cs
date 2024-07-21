@@ -31,7 +31,7 @@ namespace Content.Shared.Localizations
             // Uncomment for Ru localization
             _loc.LoadCulture(culture);
 
-            var fallbackCulture = new CultureInfo("en-US");
+            var fallbackCulture = new CultureInfo("ru-RU");
             _loc.LoadCulture(fallbackCulture);
             _loc.SetFallbackCluture(fallbackCulture);
             //
